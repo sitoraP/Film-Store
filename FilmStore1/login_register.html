@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login and regster</title>
+
+    <link rel="stylesheet" href="./css/logRef.css" />
+    <script src="./JS/User.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div class="header">
+        <img
+          src="./images/filmstore.png"
+          width="170px"
+          height="120px"
+          alt="filmstore"
+        />
+        <h1 id="headerText">Film Store</h1>
+      </div>
+      <div class="logregpart" class="form-control">
+        <form id="register" action="./PHP/addUser.php">
+          <h3 id="regHead">Regiter Yourself</h3>
+          <input
+            type="text"
+            name="fname"
+            id="fname"
+            placeholder="Your First Name"
+            required
+            maxlength="30"
+            minlength="2"
+          />
+          <input
+            type="text"
+            name="lname"
+            id="lname"
+            placeholder="Your Last Name"
+            required
+            maxlength="30"
+            minlength="2"
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Your Password"
+            required
+            minlength="8"
+          />
+        
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your Email"
+            required
+          />
+          <button type="submit">Regiter</button>
+        </form>
+        <form method="post" action="./PHP/login.php" id="login">
+          <h3 id="regHead">Login to your Account</h3>
+          <input
+            type="email"
+            name="email1"
+            id="email1"
+            placeholder="Your Email"
+            required
+          />
+          <input
+            type="password"
+            name="password1"
+            id="password1"
+            placeholder="Your Password"
+            required
+            minlength="8"
+          />
+
+          <button type="submit">login</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

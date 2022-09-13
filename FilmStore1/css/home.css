@@ -1,0 +1,25 @@
+textarea {
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 18px;
+}
+ul {
+  list-style: none;
+}
+#allfilms{
+  margin-top: 20px;
+}
+#personName {
+  font-weight: bold;
+  font-size: large;
+}
+@media only screen and (max-width: 600px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+  }
+ 
+}
